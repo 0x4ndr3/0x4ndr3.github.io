@@ -1,138 +1,278 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0x4ndr3</title><link>https://0x4ndr3.github.io/</link><description>Recent content on 0x4ndr3</description><generator>Hugo</generator><language>en-uk</language><lastBuildDate>Tue, 19 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://0x4ndr3.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://0x4ndr3.github.io/posts/my-first-post/</link><pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate><guid>https://0x4ndr3.github.io/posts/my-first-post/</guid><description>&lt;p>my first blog&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> println!(&lt;span style="color:#e6db74">&amp;#34;Hello world!&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://0x4ndr3.github.io/index-about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://0x4ndr3.github.io/index-about/</guid><description>&lt;h2 id="hello-friend">Hello friend,&lt;/h2>
-&lt;p>I&amp;rsquo;m a researcher and Red Team Leader doing pentesting, red teams, purple teams &lt;strong>since 2011&lt;/strong>. I have worked in Portugal, Australia, and currently at &lt;a
-
-	
-	
-		href = "https://advisense.com/advisory/cdr/penetration-testing/"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		Advisense
-	&lt;/span>
-
-&lt;/a>
- in Oslo, Norway. I try to publish as often as possible on my &lt;a
-
-	
-	
-		href = "https://www.youtube.com/@0x4ndr3"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		YouTube channel
-	&lt;/span>
-
-&lt;/a>
-, and &lt;a
-
-	
-	
-		href = "https://0x4ndr3.github.io"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		my blog
-	&lt;/span>
-
-&lt;/a>
-. I&amp;rsquo;ve also contributed to the &lt;a
-
-	
-	
-		href = "https://www.exploit-db.com/shellcodes?author=9244"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		Exploit Database and Google Hacking Database
-	&lt;/span>
-
-&lt;/a>
- with a few shellcodes developed while writing blog posts on &lt;a
-
-	
-	
-		href = "https://pentesterslife.blog/"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		my previous blog
-	&lt;/span>
-
-&lt;/a>
-. These contributions were part of the assignments for the &lt;a
-
-	
-	
-		href = "https://andrelima.info/files/slae64.pdf"
-
-		
-
-	
-
-	
-
-		target = "_blank"
-		rel = "nofollow noopener noreferrer"
-
-		>
-	
-	&lt;span>
-		SecurityTube Linux Assembly (x64) Expert (SLAE64)
-	&lt;/span>
-
-&lt;/a>
- exam.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>0x4ndr3</title><link>https://0x4ndr3.github.io/</link><description>Recent content on 0x4ndr3</description><generator>Hugo</generator><language>en-uk</language><lastBuildDate>Thu, 28 Jun 2018 07:21:30 +0200</lastBuildDate><atom:link href="https://0x4ndr3.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>JSgen.py – bind and reverse shell JS code generator for SSJI in Node.js with filter bypass encodings</title><link>https://0x4ndr3.github.io/posts/jsgen-py-bind-and-reverse-shell-js-code-generator-for-ssji-in-node-js-with-filter-bypass-encodings/</link><pubDate>Thu, 28 Jun 2018 07:21:30 +0200</pubDate><guid>https://0x4ndr3.github.io/posts/jsgen-py-bind-and-reverse-shell-js-code-generator-for-ssji-in-node-js-with-filter-bypass-encodings/</guid><description>&lt;p&gt;I wrote a Python script (&lt;a
+ 
+ href = "https://gitlab.com/0x4ndr3/blog/blob/master/JSgen/JSgen.py"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ JSgen.py
+ &lt;/span&gt;
+&lt;/a&gt;) to generate javascript code to be injected in case you find a Server Side Javascript Injection (SSJI). It supports both bind and reverse shells, and also two well known encodings – hex and base64 – as well as a third one – caesar’s cipher – to help in bypassing weak filters.&lt;/p&gt;</description></item><item><title>Twofish Crypter with DNS (CName) password retrieval, x64 shellcode decryption, and execution</title><link>https://0x4ndr3.github.io/posts/twofish-crypter-with-dns-cname-password-retrieval-x64-shellcode-decryption-and-execution/</link><pubDate>Fri, 02 Feb 2018 09:14:31 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/twofish-crypter-with-dns-cname-password-retrieval-x64-shellcode-decryption-and-execution/</guid><description>&lt;p&gt;&lt;strong&gt;[Update: 7 April 2018]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I altered the Decrypter.c, not to get the raw password from the CNAME record from password.andrelima.info , but instead to get an hex encoded password from the same record in passwordhex.andrelima.info&lt;/p&gt;
+&lt;p&gt;This feature allows the Crypter to encrypt the shellcode with &lt;strong&gt;passwords containing special characters&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;So, bear in mind some screenshots below might be outdated, but not the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/screen-shot-2018-04-07-at-8-47-24-pm.png" alt="Screen Shot 2018-04-07 at 8.47.24 pm"&gt;&lt;/p&gt;
+&lt;p&gt;Crypter now presenting the password used secret_%”123 in hex to insert in the CNAME record&lt;/p&gt;</description></item><item><title>Polymorphic and smaller versions of three shell-storm’s x64 shellcodes, including the smallest execve /bin/sh</title><link>https://0x4ndr3.github.io/posts/polymorphic-and-smaller-versions-of-three-shell-storm-s-x64-shellcodes-including-the-smallest-execve-bin-sh/</link><pubDate>Fri, 12 Jan 2018 15:12:53 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/polymorphic-and-smaller-versions-of-three-shell-storm-s-x64-shellcodes-including-the-smallest-execve-bin-sh/</guid><description>&lt;p&gt;&lt;strong&gt;[Update 13 Jan 2018]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ExploitDB has published the &lt;a
+ 
+ href = "https://www.exploit-db.com/shellcodes?author=9244"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ 3 shellcodes
+ &lt;/span&gt;
+&lt;/a&gt; written in this blog post.&lt;/p&gt;
+&lt;p&gt;Linux/x86-64 – &lt;a
+ 
+ href = "https://www.exploit-db.com/exploits/43550/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Execute /bin/sh
+ &lt;/span&gt;
+&lt;/a&gt; Shellcode (24 bytes)&lt;br&gt;
+Linux/x86-64 – &lt;a
+ 
+ href = "https://www.exploit-db.com/exploits/43552/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Add Map (127.1.1.1 google.lk) In /etc/hosts
+ &lt;/span&gt;
+&lt;/a&gt; Shellcode (96 bytes)&lt;br&gt;
+Linux/x86-64 – &lt;a
+ 
+ href = "https://www.exploit-db.com/exploits/43553/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ execve(“/sbin/iptables”, [“/sbin/iptables”, “-F”], NULL)
+ &lt;/span&gt;
+&lt;/a&gt; Shellcode (43 bytes)&lt;/p&gt;</description></item><item><title>Custom x64 encoder with a basic polymorphic engine implementation</title><link>https://0x4ndr3.github.io/posts/custom-x64-encoder-with-a-basic-polymorphic-engine-implementation/</link><pubDate>Mon, 18 Dec 2017 00:09:51 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/custom-x64-encoder-with-a-basic-polymorphic-engine-implementation/</guid><description>&lt;p&gt;I’ll develop a python encoder that will XOR the payload, byte by byte, with a randomly generated byte value, and also generate a polymorphic stub in x64 to decode that payload, by brute-forcing all 256 possibilities. Even though bypassing anti-virus systems is not the only purpose of encoders, it certainly is the most exciting one, and hence the detailed focus on this one subject throughout this post.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Update [20 Dec 2017]&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>x64 Egg hunting in Linux systems</title><link>https://0x4ndr3.github.io/posts/x64-egg-hunting-in-linux-systems/</link><pubDate>Fri, 24 Nov 2017 00:42:48 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/x64-egg-hunting-in-linux-systems/</guid><description>&lt;p&gt;There isn’t much when it comes to egg hunters, and even less when it comes to x64 ones. And the ones out there on &lt;a
+ 
+ href = "https://www.exploit-db.com/shellcode"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ exploit-db
+ &lt;/span&gt;
+&lt;/a&gt; and &lt;a
+ 
+ href = "http://shell-storm.org/shellcode/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ shell-storm
+ &lt;/span&gt;
+&lt;/a&gt; do leave a lot to be explained, and some… let’s just say I can’t imagine the authors even bothered to test them, let alone read Skape’s paper on &lt;a
+ 
+ href = "http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Safely Searching Process Virtual Address Space
+ &lt;/span&gt;
+&lt;/a&gt;. Fortunately, Skape’s paper exists and, together with a &lt;a
+ 
+ href = "https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ lot of reading
+ &lt;/span&gt;
+&lt;/a&gt; … and &lt;a
+ 
+ href = "https://static.lwn.net/images/pdf/LDD3/ch15.pdf"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ some more reading
+ &lt;/span&gt;
+&lt;/a&gt;, on memory models, virtual address space, etc, I hope to be able to explain this in the simplest of ways.&lt;/p&gt;</description></item><item><title>x86_64 reverse TCP bind shell with basic authentication on Linux systems</title><link>https://0x4ndr3.github.io/posts/x86_64-reverse-tcp-bind-shell-with-basic-authentication-on-linux-systems/</link><pubDate>Mon, 13 Nov 2017 11:40:35 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/x86_64-reverse-tcp-bind-shell-with-basic-authentication-on-linux-systems/</guid><description>&lt;p&gt;The objective here is to create a reverse TCP bind shell using assembly x64, which will authenticate the attacker through a password, and have no Null bytes (0x00) in it.&lt;/p&gt;
+&lt;p&gt;So, where to start? Much like the &lt;a
+ 
+ href = "https://0x4ndr3.github.io/posts/x86_64-tcp-bind-shellcode-with-basic-authentication-on-linux-systems/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ previous post
+ &lt;/span&gt;
+&lt;/a&gt;, by basing our code on the C equivalent source code. &lt;a
+ 
+ href = "https://gitlab.com/0x4ndr3/SLAE64_Assignments/blob/master/Assignment_02/original%20basic%20reverse%20shell/Reverse-Shell.c"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Here is
+ &lt;/span&gt;
+&lt;/a&gt; what a reverse tcp shell looks like in C:&lt;/p&gt;</description></item><item><title>x86_64 TCP bind shellcode with basic authentication on Linux systems</title><link>https://0x4ndr3.github.io/posts/x86_64-tcp-bind-shellcode-with-basic-authentication-on-linux-systems/</link><pubDate>Wed, 01 Nov 2017 08:44:30 +0100</pubDate><guid>https://0x4ndr3.github.io/posts/x86_64-tcp-bind-shellcode-with-basic-authentication-on-linux-systems/</guid><description>&lt;p&gt;The objective here is to create a tcp_bind_shell using Assembly x64, which will ask for a passcode, and have no null bytes in it.&lt;/p&gt;
+&lt;p&gt;So, where to start? By basing our code on the C equivalent source code. &lt;a
+ 
+ href = "https://gitlab.com/0x4ndr3/SLAE64_Assignments/blob/master/Assignment_01/original%20basic%20bind%20shell/Bind-Shell.c"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Here is
+ &lt;/span&gt;
+&lt;/a&gt; what a tcp_bind_shell looks like in C:&lt;/p&gt;
+&lt;p&gt;&lt;a
+ 
+ href = "https://gitlab.com/0x4ndr3/SLAE64_Assignments/blob/master/Assignment_01/original%20basic%20bind%20shell/Bind-Shell.c"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ &lt;img src="images/fig1-e1509498273204.png" alt="Figure 1 – Simple tcp_bind_shell in C"&gt;
+ &lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Bypassing CSRF tokens with Python’s CGIHTTPServer to exploit SQLi</title><link>https://0x4ndr3.github.io/posts/bypassing-csrf-tokens-with-python-s-cgihttpserver-to-exploit-sqli/</link><pubDate>Mon, 09 Oct 2017 08:05:19 +0200</pubDate><guid>https://0x4ndr3.github.io/posts/bypassing-csrf-tokens-with-python-s-cgihttpserver-to-exploit-sqli/</guid><description>&lt;p&gt;There are ways to configure &lt;a
+ 
+ href = "https://portswigger.net/burp"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Burp
+ &lt;/span&gt;
+&lt;/a&gt; using macros to bypass CSRF tokens on HTML forms, so we can use Burp Active Scans, Burp Intruder, Burp Repeater, and (cautiously) even Burp Proxy. There’s also Grep-Extract and pitchfork attack type specifically for Intruder. And, you might even develop your Burp Extension to do it. &lt;a
+ 
+ href = "https://github.com/sqlmapproject/sqlmap"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Sqlmap
+ &lt;/span&gt;
+&lt;/a&gt; has a &lt;em&gt;-–csrf-token&lt;/em&gt; and a &lt;em&gt;&amp;ndash;csrf-url&lt;/em&gt; for the same purpose, or you can just configure Burp as previously stated, and run sqlmap through Burp using &lt;em&gt;–-proxy&lt;/em&gt;.&lt;/p&gt;</description></item><item><title/><link>https://0x4ndr3.github.io/index-about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://0x4ndr3.github.io/index-about/</guid><description>&lt;h3 id="blog-posts-here"&gt;&lt;a
+ 
+ href = "/posts"
+ 
+ 
+ &gt;
+ &lt;span&gt;
+ Blog Posts here &amp;hellip;
+ &lt;/span&gt;
+&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hello friend,&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a researcher and Red Team Leader doing pentesting, red teams, purple teams &lt;strong&gt;since 2011&lt;/strong&gt;. I have worked in Portugal, Australia, and currently settled at &lt;a
+ 
+ href = "https://www.telenorcyberdefence.com/services/advisory-services/"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Telenor Cyberdefence
+ &lt;/span&gt;
+&lt;/a&gt; in Oslo, Norway. I try to publish as often as possible on my &lt;a
+ 
+ href = "https://www.youtube.com/@0x4ndr3"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ YouTube channel
+ &lt;/span&gt;
+&lt;/a&gt;, and &lt;a
+ 
+ href = "https://0x4ndr3.github.io"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ my blog
+ &lt;/span&gt;
+&lt;/a&gt;. I&amp;rsquo;ve also contributed to the &lt;a
+ 
+ href = "https://www.exploit-db.com/shellcodes?author=9244"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ Exploit Database and Google Hacking Database
+ &lt;/span&gt;
+&lt;/a&gt; with a few shellcodes developed while writing blog posts. These contributions were part of the assignments for the &lt;a
+ 
+ href = "https://andrelima.info/files/slae64.pdf"
+ 
+ 
+ 
+ target = "_blank"
+ rel = "nofollow noopener noreferrer"
+ &gt;
+ &lt;span&gt;
+ SecurityTube Linux Assembly (x64) Expert (SLAE64)
+ &lt;/span&gt;
+&lt;/a&gt; exam.&lt;/p&gt;</description></item></channel></rss>
